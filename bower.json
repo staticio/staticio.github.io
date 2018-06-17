@@ -1,0 +1,23 @@
+{
+  "name": "staticio.github.io",
+  "authors": [
+    "liberoht <liberoht@users.noreply.github.com>"
+  ],
+  "description": "Staticio home page",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^4.1.1"
+  },
+  "license": "MIT",
+  "homepage": "http://staticio.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "contents/bower_components",
+    "test",
+    "tests"
+  ]
+}

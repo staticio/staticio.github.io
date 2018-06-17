@@ -1,0 +1,20 @@
+html, body{
+	font-size: 100%;
+    font-family: 'Lato', sans-serif;
+	background: url(../images/background.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	overflow: hidden;
+}
+body *{
+    color: white;
+}
+
+.container.main {
+    background: rgba(255, 255, 255, 0.33);
+}
