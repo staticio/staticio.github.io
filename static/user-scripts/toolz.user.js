@@ -10,10 +10,15 @@
 // @license       MIT License
 // ==/UserScript==
 
+function getElementByXpath(path) {
+    return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
 var url = window.location.href;
 var wikidich = new RegExp("http:\/\/wikidich\.com\/truyen\/.{1,}", "g");
 var tangthuvien = new RegExp("https:\/\/truyen\.tangthuvien\.vn\/doc-truyen\/.{1,}\/.{1,}", "g");
 var googleSearch = new RegExp("https:\/\/www\.?google\..+?\/search.{1,}", "g");
+var outlookMail = new RegExp("https:\/\/outlook\.live\.com\/.{1,}", "g");
 
 if (wikidich.test(url)) {
     console.log("Wikidich");
@@ -86,4 +91,8 @@ if (googleSearch.test(url)) {
     function isGoogleImgs() {
         return document.getElementsByClassName('rg_ic').length !== 0;
     }
+} else
+if (outlookMail.test(url)) {
+    console.log("outlook-mail");
+    getElementByXpath("//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]").remove();
 }

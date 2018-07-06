@@ -332,3 +332,4 @@
 127.0.0.1 adservice.google.com.vn
 127.0.0.1 adservice.google.com
 127.0.0.1 ads.servebom.com
+127.0.0.1 trc.taboola.com
