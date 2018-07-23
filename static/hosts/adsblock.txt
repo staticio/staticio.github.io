@@ -342,3 +342,4 @@
 127.0.0.1 srv.carbonads.net
 127.0.0.1 pl.ventunotech.com
 127.0.0.1 web.ventunotech.com
+127.0.0.1 log.ventunotech.com
