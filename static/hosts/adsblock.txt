@@ -338,3 +338,5 @@
 127.0.0.1 api.ad.intl.miui.com
 127.0.0.1 globalapi.ad.intl.miui.com
 127.0.0.1 sdkconfig.ad.intl.miui.com
+127.0.0.1 cdn.carbonads.com
+127.0.0.1 srv.carbonads.net
