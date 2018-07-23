@@ -19,7 +19,12 @@ var wikidich = new RegExp("http:\/\/wikidich\.com\/truyen\/.{1,}", "g");
 var tangthuvien = new RegExp("https:\/\/truyen\.tangthuvien\.vn\/doc-truyen\/.{1,}\/.{1,}", "g");
 var googleSearch = new RegExp("https:\/\/www\.?google\..+?\/search.{1,}", "g");
 var outlookMail = new RegExp("https:\/\/outlook\.live\.com\/.{1,}", "g");
+var truyencv = new RegExp("http:\/\/truyencv\.com\/.{1,}\/.{1,}", "g");
 
+if (truyencv.test(url)) {
+    console.log("truyencv");
+    document.getElementsByClassName("vtn-webplyr-inner-player").item(0).remove();
+} else
 if (wikidich.test(url)) {
     console.log("Wikidich");
     var wikidichContent = document.getElementById("bookContent");
