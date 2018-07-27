@@ -343,3 +343,6 @@
 127.0.0.1 pl.ventunotech.com
 127.0.0.1 web.ventunotech.com
 127.0.0.1 log.ventunotech.com
+127.0.0.1 qc-static.coccoc.com
+127.0.0.1 qccoccocmedia.vn
+127.0.0.1 ntrb.qc.coccoc.com
