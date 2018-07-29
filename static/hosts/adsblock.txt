@@ -333,6 +333,10 @@
 127.0.0.1 adservice.google.com
 127.0.0.1 ads.servebom.com
 127.0.0.1 trc.taboola.com
+127.0.0.1 images.taboola.com
+127.0.0.1 cdn.taboola.com
+127.0.0.1 api.taboola.com
+127.0.0.1 api-s2s.taboola.com
 127.0.0.1 adv.sec.intl.miui.com
 127.0.0.1 api.c.avazunativeads.com
 127.0.0.1 api.ad.intl.miui.com
