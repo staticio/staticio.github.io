@@ -14,6 +14,9 @@ function getElementByXpath(path) {
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 
+var siteScript = document.createElement('script');
+    siteScript.type = 'text/javascript';
+
 var url = window.location.href;
 var wikidich = new RegExp("https:\/\/wikidich\.com\/truyen\/.{1,}", "g");
 var tangthuvien = new RegExp("https:\/\/truyen\.tangthuvien\.vn\/doc-truyen\/.{1,}\/.{1,}", "g");
@@ -21,9 +24,9 @@ var googleSearch = new RegExp("https:\/\/www\.?google\..+?\/search.{1,}", "g");
 var outlookMail = new RegExp("https:\/\/outlook\.live\.com\/.{1,}", "g");
 var truyencv = new RegExp("http:\/\/truyencv\.com\/.{1,}\/.{1,}", "g");
 
-if (truyencv.test(url)) {
-    console.log("truyencv");
-    document.getElementsByClassName("vtn-webplyr-inner-player").item(0).remove();
+if (truyencv.test(url)) {    
+    siteScript.src = 'https://staticio.github.io/static/user-scripts/site-scripts/toolz.truyencv.js';
+    document.getElementsByTagName('body')[0].appendChild(siteScript);
 } else
 if (wikidich.test(url)) {
     console.log("Wikidich");
