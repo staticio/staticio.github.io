@@ -7,7 +7,7 @@ if (typeof chaptersLink !== undefined) {
 
     var counter = 0;
     var timer = setInterval(function () {
-
+        console.log(counter);
         var allChapters = $(".panel-body nav ul:first-child li a").get(0);
         console.log(allChapters);
         if (typeof allChapters !== undefined) {
