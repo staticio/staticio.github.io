@@ -5,14 +5,9 @@ if (chaptersLink.length !== 0) {
     console.log("truyencv: Show chapters list");
     chaptersLink.click();
 
-    do {
-        setTimeout(function () {
-            var allChapters = $(".panel-body nav ul:first-child li a").get(0);
-            console.log(allChapters);
-            if (allChapters != null) {
-                allChapters.click();
-            }
-        }, 1000);
+    var allChapters = $(".panel-body nav ul:first-child li a").get(0);
+    console.log(allChapters);
+    if (allChapters != null) {
+        allChapters.click();
     }
-    while (allChapters.length === 0);
 }
