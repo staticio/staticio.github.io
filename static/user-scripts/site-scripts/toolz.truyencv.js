@@ -5,21 +5,21 @@ if (typeof chaptersLink !== undefined) {
     console.log("truyencv: Show chapters list");
     chaptersLink.click();
 
-    var count = 0;
-    do {
-        setTimeout(function () {
-            var allChapters = $(".panel-body nav ul:first-child li a").get(0);
-            console.log(allChapters);
-            if (typeof allChapters !== undefined) {
-                allChapters.click();
-                break;
-            }
-        }, 1000);
+    var counter = 0;
+    var timer = setInterval(function () {
 
-        count++;
-        if (count > 60) {
-            break;
+        var allChapters = $(".panel-body nav ul:first-child li a").get(0);
+        console.log(allChapters);
+        if (typeof allChapters !== undefined) {
+            allChapters.click();
+            clearInterval(timer);
+            console.log("truyencv: Show all chapters");
         }
-    }
-    while (true);
+
+        if (counter > 60) {
+            clearInterval(timer);
+            console.log("Error while load all chapter");
+        }
+        counter++;
+    }, 1000);
 }
