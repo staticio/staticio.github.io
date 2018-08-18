@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name          AtoZ website toolz
 // @include       *
+// @require       http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js
 // @description   All my scripts for specific websites
 // @version       1.0.1
 // @updateURL     https://staticio.github.io/static/user-scripts/toolz.user.js
@@ -22,7 +23,7 @@ var wikidich = new RegExp("https:\/\/wikidich\.com\/truyen\/.{1,}", "g");
 var tangthuvien = new RegExp("https:\/\/truyen\.tangthuvien\.vn\/doc-truyen\/.{1,}\/.{1,}", "g");
 var googleSearch = new RegExp("https:\/\/www\.?google\..+?\/search.{1,}", "g");
 var outlookMail = new RegExp("https:\/\/outlook\.live\.com\/.{1,}", "g");
-var truyencv = new RegExp("http:\/\/truyencv\.com\/.{1,}\/.{1,}", "g");
+var truyencv = new RegExp("http:\/\/truyencv\.com\/.{1,}", "g");
 
 if (truyencv.test(url)) {    
     siteScript.src = 'https://staticio.github.io/static/user-scripts/site-scripts/toolz.truyencv.js';
