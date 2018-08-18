@@ -1,7 +1,7 @@
 console.log("truyencv");
 
 var chaptersLink = $("a[aria-controls='truyencv-detail-chap']").get(0);
-if (chaptersLink != null) {
+if (chaptersLink.length !== 0) {
     console.log("truyencv: Show chapters list");
     chaptersLink.click();
 
@@ -14,5 +14,5 @@ if (chaptersLink != null) {
             }
         }, 1000);
     }
-    while (allChapters == null);
+    while (allChapters.length === 0);
 }
