@@ -352,3 +352,9 @@
 127.0.0.1 ntrb.qc.coccoc.com
 127.0.0.1 bs.serving-sys.com
 127.0.0.1 ds.serving-sys.com
+127.0.0.1 cdn-qc.coccoc.com
+127.0.0.1 catalog.qc.coccoc.com
+127.0.0.1 context.qc.coccoc.com
+127.0.0.1 pixel.adsafeprotected.com
+127.0.0.1 svastx.moatads.com
+127.0.0.1 px.moatads.com
