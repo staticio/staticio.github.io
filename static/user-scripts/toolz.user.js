@@ -19,7 +19,7 @@ var siteScript = document.createElement('script');
     siteScript.type = 'text/javascript';
 
 var url = window.location.href;
-var wikidich = new RegExp("https:\/\/wikidich\.com\/truyen\/.{1,}", "g");
+var wikidich = new RegExp("https:\/\/wikidich\.com\/truyen\/.{1,}\/.{1,}", "g");
 var tangthuvien = new RegExp("https:\/\/truyen\.tangthuvien\.vn\/doc-truyen\/.{1,}\/.{1,}", "g");
 var googleSearch = new RegExp("https:\/\/www\.?google\..+?\/search.{1,}", "g");
 var outlookMail = new RegExp("https:\/\/outlook\.live\.com\/.{1,}", "g");

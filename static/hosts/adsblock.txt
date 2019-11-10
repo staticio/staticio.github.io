@@ -1,7 +1,3 @@
-#Localhost
-127.0.0.1 aptech.demos
-127.0.0.1 libraz.site
-
 #Tracking
 127.0.0.1 doubleclick.net
 127.0.0.1 stats.g.doubleclick.net
