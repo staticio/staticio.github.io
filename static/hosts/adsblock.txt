@@ -354,3 +354,6 @@
 127.0.0.1 pixel.adsafeprotected.com
 127.0.0.1 svastx.moatads.com
 127.0.0.1 px.moatads.com
+
+# Redirect
+127.0.0.1 athingcatedrestori.info
