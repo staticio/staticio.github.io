@@ -6,6 +6,9 @@
 127.0.0.1 static.criteo.net
 127.0.0.1 www.google-analytics.com
 
+#Annoy
+127.0.0.1 statics.lotuscdn.vn
+
 #Adblock
 127.0.0.1 www.googleadservices.com
 127.0.0.1 pagead2.googlesyndication.com
