@@ -8,6 +8,7 @@
 
 #Annoy
 127.0.0.1 statics.lotuscdn.vn
+127.0.0.1 www.googletagmanager.com
 
 #Adblock
 127.0.0.1 www.googleadservices.com
